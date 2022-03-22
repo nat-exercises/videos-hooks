@@ -20,12 +20,7 @@ const SearchBar = ({ onFormSubmit }) => {
         <div className="field">
           <div class="ui icon input">
             <i class="search icon"></i>
-            <input
-              type="text"
-              placeholder="Search..."
-              value={term}
-              onChange={onInputChange}
-            />
+            <input type="text" value={term} onChange={onInputChange} />
           </div>
         </div>
         <button className="medium ui black button" type="submit">
