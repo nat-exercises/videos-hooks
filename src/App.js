@@ -13,14 +13,17 @@ const App = () => {
   }, [videos]);
 
   return (
-    <div className="ui container" style={{ marginTop: "20px" }}>
+    <div className="ui container" style={{ marginTop: "10px" }}>
       <SearchBar onFormSubmit={search} />
       <div className="ui grid">
         <div className="ui row">
-          <div className="eleven wide column">
+          <div className="eleven wide column relaxed grid">
             <VideoDetail video={selectedVideo} />
           </div>
-          <div className="five wide column">
+          <div
+            className="five wide columnm relaxed grid"
+            style={{ padding: "10px", margin: "auto" }}
+          >
             <VideoList onVideoSelect={setSelectedVideo} videos={videos} />
           </div>
         </div>

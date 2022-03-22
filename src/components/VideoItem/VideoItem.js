@@ -10,7 +10,9 @@ const VideoItem = ({ video, onVideoSelect }) => {
         alt={video.snippet.title}
       />
       <div className="content">
-        <div className="header">{video.snippet.title}</div>
+        <div style={{ fontSize: "10px" }}>
+          <div className="header-message header">{video.snippet.title}</div>
+        </div>
       </div>
     </div>
   );
